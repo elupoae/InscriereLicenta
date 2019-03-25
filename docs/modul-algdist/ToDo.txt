@@ -1,0 +1,15 @@
+ToDO 01/04/2019:
+->Refacere Diagrame C4 cu toate cele 4 nivel
+    -Nivelul 4 trebuie sa fie mai detaliat
+    -La nivelul 4 trebuie facut pe toate clasele
+
+->Diagrama de Clase de tipul:
+    -o interfata care sa fie implementata in mai multe clase care contin fiecare cate un alg de distributie in functie de preferintele stud/prof
+    -clase de comunicare cu modulul servicii/bd (trebuie stabilit cu care)
+
+->Refacere diagrama baze de date
+    -4 tabele
+
+->ProductBacklog mai detaliat si mai concret + ProductBacklog si pentru iteratie
+
+->Documentatie asupra alg. de distribuire(putem crea alg de la 0 sau sa luam de pe net)
