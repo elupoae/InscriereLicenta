@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -17,13 +21,13 @@ div#container {
 
 .left-bar {
     width: 250px;
-    height: calc(100% - 70px);
+    /*height: 100%;*/
     background-color: #59AFFF;
 }
 
 .content {
     width: 100%;
-    height: calc(100% - 70px);
+    /*height: 100%;*/
     background-color: ghostwhite;
     padding: 15px;
 }
