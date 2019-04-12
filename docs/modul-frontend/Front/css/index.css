@@ -90,3 +90,58 @@ a.active {
     clear: both;
     display: table;
 }
+
+
+/*----------------- MAIN -----------------*/
+#main {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#main-content {
+    margin-top: 50px;
+    border-radius: 8px;
+    background-color: #F8F8FF;
+    height: calc(100vh - 140px);
+    width: 90%;
+}
+
+.main-title {
+    padding: 20px;
+}
+
+.main-title h2 {
+    text-align: center;
+    margin: 20px 20px;
+    color: #3c4a55;
+}
+
+.comisie {
+    padding: 30px
+}
+
+.comisie hr {
+    width: 278px;
+}
+
+.comisie .comisie-rezultate {
+    margin: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.comisie .comisie-rezultate a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+
+    margin: 0 25px 15px 25px
+}
+
+.comisie .comisie-rezultate a:hover {
+    color: #ff9d06;
+}
