@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard: Edit committees</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/create_new_account.css">
+    <link rel="stylesheet" href="css/label-input.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/edit_committees.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.css">
+</head>
+<body>
+<div id="dashboard-content">
+    <div id="header">
+        <div class="logo"><a href="#"><img src="image/logo-university.png" alt="Logo-license"></a></div>
+    </div>
+
+    <div class="close-bar">
+        <a class="home">HOME</a>
+    </div>
+
+    <div class="container-admin" id="container">
+        <div class="left-bar">
+            <ul id="nav">
+                <li><a class="selected" href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="#">Account Manager</a></li>
+                <li><a href="create_new_account.html">Create new account</a></li>
+                <li><a href="#">Insert license info</a></li>
+                <li><a href="#">Edit license</a></li>
+                <li><a href="edit_committees.html">Edit committees</a></li>
+                <li><a href="edit_accounts.html">Edit accounts</a></li>
+                <li><a href="index.html">Log out</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Edit committees</h1>
+            <p>Insert information here..</p>
+
+            <div class="button-class">
+                <button type="button" class="button-table">License</button>
+                <button type="button" class="button-table">Dissertation</button>
+            </div>
+
+            <div class="select-committees" style="display: block;">
+                <h3>License</h3>
+                <form onsubmit="validateLicense()">
+                    <select class="select-license" id="choose-license" multiple>
+                        <option value="Diac Mihai">Diac Mihai</option>
+                        <option value="Gatu Cristian">Gatu Cristian</option>
+                        <option value="Gavrilut Dragos">Gavrilut Dragos</option>
+                        <option value="Iacob Florin">Iacob Florin</option>
+                    </select>
+                    <button type="submit" class="button-select">Submit</button>
+                </form>
+            </div>
+
+
+            <div class="select-committees" style="display: none;">
+                <h3>Dissertation</h3>
+                <form onsubmit="validateDissertation()">
+                    <select class="select-dissertation" id="choose-dissertation" multiple>
+                        <option value="Abacioaie Nicolae">Abacioaie Nicolae</option>
+                        <option value="Aioanei Dragos">Aioanei Dragos</option>
+                        <option value="Diac Mihai">Diac Mihai</option>
+                        <option value="Gatu Cristian">Gatu Cristian</option>
+                        <option value="Gavrilut Dragos">Gavrilut Dragos</option>
+                        <option value="Iacob Florin">Iacob Florin</option>
+                    </select>
+                    <button type="submit" class="button-select">Submit</button>
+                </form>
+            </div>
+
+
+            <div class="tables" style="overflow-x:auto; display: block">
+                <div class="table-license">
+                    <div class="header-table">
+                        <h3>Committees 1</h3>
+                        <h3 class="delete-committees">DELETE</h3>
+                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Degree</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="column">Diac Mihai</td>
+                            <td class="column">Diac.Mihai@gmail.com</td>
+                            <td class="column">Member</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Gatu Cristian</td>
+                            <td class="column">Gatu.Cristian@gmail.com</td>
+                            <td class="column">Member</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Gavrilut Dragos</td>
+                            <td class="column">Gavrilut.Dragos@gmail.com</td>
+                            <td class="column">Secretary</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Iacob Florin</td>
+                            <td class="column">Iacob.Florin@gmail.com</td>
+                            <td class="column">President</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-license">
+                    <div class="header-table">
+                        <h3>Committees 2</h3>
+                        <h3 class="delete-committees">DELETE</h3>
+                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Degree</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="column">Diac Mihai</td>
+                            <td class="column">Diac.Mihai@gmail.com</td>
+                            <td class="column">Member</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Gatu Cristian</td>
+                            <td class="column">Gatu.Cristian@gmail.com</td>
+                            <td class="column">Member</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Gavrilut Dragos</td>
+                            <td class="column">Gavrilut.Dragos@gmail.com</td>
+                            <td class="column">Secretary</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Iacob Florin</td>
+                            <td class="column">Iacob.Florin@gmail.com</td>
+                            <td class="column">President</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tables" style="overflow-x:auto; display: none">
+                <div class="table-dissertation">
+                    <div class="header-table">
+                        <h3>Committees 1</h3>
+                        <h3 class="delete-committees">DELETE</h3>
+                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Degree</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="column">Diac Mihai</td>
+                            <td class="column">Diac.Mihai@gmail.com</td>
+                            <td class="column">Member</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Abacioaie Nicolae</td>
+                            <td class="column">Abacioaie.Nicolae@gmail.com</td>
+                            <td class="column">Member</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Gatu Cristian</td>
+                            <td class="column">Gatu.Cristian@gmail.com</td>
+                            <td class="column">Member</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Gavrilut Dragos</td>
+                            <td class="column">Gavrilut.Dragos@gmail.com</td>
+                            <td class="column">Secretary</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Iacob Florin</td>
+                            <td class="column">Iacob.Florin@gmail.com</td>
+                            <td class="column">President</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".select-license").chosen();
+    });
+    $(document).ready(function () {
+        $(".select-dissertation").chosen();
+    });
+</script>
+<script src="javascript/JQuery.js"></script>
+<script src="javascript/responsive-dashboard.js"></script>
+<script src="javascript/edit_committees.js"></script>
+<script src="javascript/chosen.jquery.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+.content .button-class {
+    margin-top: 30px;
+
+    height: 150px;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button {
+    margin-right: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+.header-table {
+    margin: 30px 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-table .delete-committees {
+    color: #dd4b39;
+    cursor: pointer;
+}
+
+.select-committees h3{
+    margin-bottom: 10px;
+}
+
+.select-committees {
+    min-width: 100%
+}
+
+.select-license, .select-dissertation {
+    width: 350px;
+}
+

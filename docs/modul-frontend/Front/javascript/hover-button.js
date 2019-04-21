@@ -11,9 +11,6 @@ for (let i = 0; i <= classButton.length; i++) {
                     classTables[j].style.display = 'none';
                 }
             }
-        } else {
-            classTables[i].style.display = 'none';
         }
-
     };
 }

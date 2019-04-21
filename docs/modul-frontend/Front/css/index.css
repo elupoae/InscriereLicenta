@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body {
+    background-color: ghostwhite;
+}
+
 
 div .header-right {
     float: right;
@@ -103,7 +107,7 @@ a.active {
 #main-content {
     margin-top: 50px;
     border-radius: 8px;
-    background-color: #F8F8FF;
+    background-color: #bbdcff;
     height: calc(100vh - 140px);
     width: 90%;
 }
@@ -118,22 +122,14 @@ a.active {
     color: #3c4a55;
 }
 
-.comisie {
-    padding: 30px
-}
-
-.comisie hr {
-    width: 278px;
-}
-
-.comisie .comisie-rezultate {
-    margin: 30px 30px;
+.comisie-rezultate {
+    margin: 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.comisie .comisie-rezultate a {
+.comisie-rezultate a {
     color: #000;
     text-decoration: none;
     font-size: 16px;
@@ -142,6 +138,23 @@ a.active {
     margin: 0 25px 15px 25px
 }
 
-.comisie .comisie-rezultate a:hover {
+.comisie-rezultate a:hover {
     color: #ff9d06;
+}
+
+.news .news-top {
+    color: ghostwhite;
+    text-shadow: 0 1px 1px #000;
+    background-color: #72B0EA;
+    padding: 5px 10px 5px 5px;
+    font-weight: 300;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 1px 2px 2px #424242;
+}
+
+.news .news-info {
+    padding: 15px;
+    background-color: #d7eaff;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 1px 2px 2px #424242;
 }
