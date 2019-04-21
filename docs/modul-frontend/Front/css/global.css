@@ -14,7 +14,8 @@ body {
 
 div#container {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: 100%;
+    min-height: calc(100vh - 70px);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -31,12 +32,17 @@ div#container {
     padding: 15px;
 }
 
+.content h1 {
+    margin: 0;
+    color: #000;
+}
+
 .content p {
     color: #424242;
     font-size: 14px;
 }
 
-div .box {
+.content .box {
     margin-top: 15px;
 }
 
@@ -129,6 +135,3 @@ ul#nav li .selected {
     }
 }
 
-@media screen and (min-width: 650px) {
-
-}

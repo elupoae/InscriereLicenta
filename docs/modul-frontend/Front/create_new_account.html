@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard: Create New Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/create_new_account.css">
+    <link rel="stylesheet" href="css/label-input.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="javascript/JQuery.js"></script>
+    <script src="javascript/responsive-dashboard.js"></script>
+</head>
+<body>
+<div id="dashboard-content">
+    <div id="header">
+        <div class="logo"><a href="#"><img src="image/logo-university.png" alt="Logo-license"></a></div>
+    </div>
+
+    <div class="close-bar">
+        <a class="home">HOME</a>
+    </div>
+
+    <div class="container-admin" id="container">
+        <div class="left-bar">
+            <ul id="nav">
+                <li><a class="selected" href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="#">Account Manager</a></li>
+                <li><a href="create_new_account.html">Create new account</a></li>
+                <li><a href="#">Insert license info</a></li>
+                <li><a href="#">Edit license</a></li>
+                <li><a href="#">Edit committees</a></li>
+                <li><a href="edit_accounts.html">Edit accounts</a></li>
+                <li><a href="index.html">Log out</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Create new account</h1>
+            <p>Create account for new professor.</p>
+            <div class="content-button-add">
+                <button onclick="document.getElementById('add-account').style.display='block'" type="button" class="button-add">Add new account</button>
+            </div>
+
+            <div id="add-account" class="box" >
+                <form class="box-content animate">
+                    <div class="container-login">
+                        <div class="content-login">
+                            <h1 align="center">Add new account professor</h1>
+                            <hr>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="last-name" placeholder="" autocomplete="off" required/>
+                            <label class="label">
+                                <span class="content-span">First name</span>
+                            </label>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="first-name" placeholder="" autocomplete="off" required/>
+                            <label class="label">
+                                <span class="content-span">Last name</span>
+                            </label>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="degree" placeholder="" autocomplete="off" required/>
+                            <label class="label">
+                                <span class="content-span">Didactic degree</span>
+                            </label>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="email" placeholder="" autocomplete="off" required/>
+                            <label class="label">
+                                <span class="content-span">E-mail</span>
+                            </label>
+                        </div>
+                        <button type="button" class="button-append">Append</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="content-table" style="overflow-x:auto;">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Degree</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="column">Ilie Paul</td>
+                        <td class="column">nume at site.ceva</td>
+                        <td class="column">Profesor</td>
+                    </tr>
+                    <tr>
+                        <td class="column">Vlad Adelin</td>
+                        <td class="column">email at yahoo.com</td>
+                        <td class="column">Lector</td>
+                    </tr>
+                    <tr>
+                        <td class="column">Lupoae Eduard</td>
+                        <td class="column">amun.mail at a.abx</td>
+                        <td class="column">Inspector</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="javascript/login-box.js"></script>
+
+</body>
+</html>

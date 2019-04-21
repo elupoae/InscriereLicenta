@@ -18,6 +18,21 @@ body {
 
 button {
     margin-top: 30px;
+    width: 130px;
+}
+
+.button-zone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-zone .button-back {
+    background-color: #dd4b39;
+    width: 80px;
+}
+
+.button-zone .button-register {
+    background-color: #0F9D58;
 }
 
 
