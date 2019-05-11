@@ -23,7 +23,18 @@ button {
     justify-content: space-between;
 }
 
-.header-table .delete-committees {
+.table-edit-delete {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.table-edit-delete .edit-committees {
+    color: #0F9D58;
+    cursor: pointer;
+}
+
+.table-edit-delete .delete-committees {
     color: #dd4b39;
     cursor: pointer;
 }

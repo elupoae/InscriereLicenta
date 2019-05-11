@@ -59,7 +59,9 @@
                         <option value="Gavrilut Dragos">Gavrilut Dragos</option>
                         <option value="Iacob Florin">Iacob Florin</option>
                     </select>
-                    <button type="submit" class="button-select">Submit</button>
+                    <div class="button-select">
+                        <button type="submit" class="button-select">Submit</button>
+                    </div>
                 </form>
             </div>
 
@@ -84,7 +86,11 @@
                 <div class="table-license">
                     <div class="header-table">
                         <h3>Committees 1</h3>
-                        <h3 class="delete-committees">DELETE</h3>
+                        <div class="table-edit-delete">
+                            <h3 class="edit-committees">EDIT</h3>
+                            <h3>/</h3>
+                            <h3 class="delete-committees">DELETE</h3>
+                        </div>
                     </div>
                     <table>
                         <thead>
@@ -121,7 +127,11 @@
                 <div class="table-license">
                     <div class="header-table">
                         <h3>Committees 2</h3>
-                        <h3 class="delete-committees">DELETE</h3>
+                        <div class="table-edit-delete">
+                            <h3 class="edit-committees">EDIT</h3>
+                            <h3>/</h3>
+                            <h3 class="delete-committees">DELETE</h3>
+                        </div>
                     </div>
                     <table>
                         <thead>
@@ -161,7 +171,11 @@
                 <div class="table-dissertation">
                     <div class="header-table">
                         <h3>Committees 1</h3>
-                        <h3 class="delete-committees">DELETE</h3>
+                        <div class="table-edit-delete">
+                            <h3 class="edit-committees">EDIT</h3>
+                            <h3>/</h3>
+                            <h3 class="delete-committees">DELETE</h3>
+                        </div>
                     </div>
                     <table>
                         <thead>
@@ -205,6 +219,9 @@
         </div>
     </div>
 </div>
+<footer>
+
+</footer>
 
 <script>
     $(document).ready(function () {
@@ -213,6 +230,10 @@
     $(document).ready(function () {
         $(".select-dissertation").chosen();
     });
+    $(document).ready(function() {
+        $(".change-degree").chosen();
+    });
+
 </script>
 <script src="javascript/JQuery.js"></script>
 <script src="javascript/responsive-dashboard.js"></script>

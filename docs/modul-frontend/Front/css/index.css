@@ -13,6 +13,13 @@ div .header-right {
     float: right;
 }
 
+.header .logo img {
+    height: 50px;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
 .button {
     color: #222;
     padding: 24px;
@@ -108,7 +115,7 @@ a.active {
     margin-top: 50px;
     border-radius: 8px;
     background-color: #bbdcff;
-    height: calc(100vh - 140px);
+    height: 100%;
     width: 90%;
 }
 
@@ -142,6 +149,10 @@ a.active {
     color: #ff9d06;
 }
 
+.news {
+    margin: 30px;
+}
+
 .news .news-top {
     color: ghostwhite;
     text-shadow: 0 1px 1px #000;
@@ -158,3 +169,63 @@ a.active {
     border-radius: 0 0 3px 3px;
     box-shadow: 1px 2px 2px #424242;
 }
+
+.all-information {
+    margin: 30px;
+}
+
+.all-information h2 {
+    margin: 30px 0 10px 20px;
+    color: #3c4a55;
+}
+
+.information-content {
+    margin: 30px;
+}
+
+.committees-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.committees-info .committee {
+    text-align: center;
+    width: 300px;
+}
+
+.composition-committee {
+    background-color: ghostwhite;
+    height: 110px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+}
+
+.composition-committee p {
+    margin: 4px;
+}
+
+.committee .committee-number {
+    height: 30px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 438px) {
+    #main-content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .header .logo img {
+        height: 50px;
+        width: 100%;
+    }
+}
+
+
